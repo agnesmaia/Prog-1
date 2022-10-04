@@ -3,8 +3,8 @@ def chainOccurrence(cadeia, padrao):
   Informa a quantidade de vezes que o valor 'padrao' aparece em 'cadeia'
 
   Arguments:
-    padrao: uma string
     cadeia: uma string
+    padrao: uma string
 
   Returns:
     Retorna o Número de registros de 'padrao' encontrados em 'cadeia'
@@ -15,7 +15,7 @@ def chainOccurrence(cadeia, padrao):
   except Exception:
     print('Tempo em erro de execução desconhecido.')
 
-chainOccurrence(
-    input('Cadeia: '),
-    input('Padrão: ') 
-)
+cadeia = input("Digite a Cadeia de caracteres: ")
+padrao = input("Digite o padrão que deseja encontrar: ")
+
+chainOccurrence(cadeia, padrao)

@@ -1,6 +1,17 @@
 import csv
 
 def yearOrGenderOccurrence(ano, sexo):
+    '''
+  Número de registros com year maior ou igual ao valor do parâmetro ano e gender igual ao valor do parâmetro sexo. 
+
+  Arguments:
+    ano:  um número inteiro
+    sexo: uma string. Valores Possíveis: 'M' 'F'
+
+  Returns:
+    Número de Ocorrências de Ano
+    Número de Ocorrências de Sexo
+  '''
     try:
         arquivo = open("dados_usuario.csv")
         linhas = csv.reader(arquivo)

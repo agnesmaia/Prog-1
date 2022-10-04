@@ -1,6 +1,15 @@
 import csv
 
 def numberOccurrence(numero):
+    '''
+  Analisa se o parâmetro 'numero' é igual a informação 'number' do arquivo
+
+  Arguments:
+    numero: um número inteiro
+
+  Returns:
+    A lista dos IDs que contém o parâmetro número na informação 'number'
+  '''
     try:
         arquivo = open("dados_usuario.csv")
         linhas = csv.reader(arquivo)

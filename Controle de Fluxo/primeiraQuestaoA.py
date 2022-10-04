@@ -1,6 +1,17 @@
 import csv
 
 def nameOccurrence(nome = ''):
+    '''
+    Número de ocorrências do parâmetro "nome" e Lista de Nomes que iniciam com o valor do parâmentro.
+
+    Arguments:
+        nome: uma string
+
+    Returns:
+        Quantidade de ocorrências
+        
+        Lista de Nomes
+    '''
     try:
         arquivo = open("dados_usuario.csv")
         linhas = csv.reader(arquivo)

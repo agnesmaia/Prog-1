@@ -1,6 +1,16 @@
 from csv import writer
 
 def addNewRegisters(nome, ano, sexo, numero):
+    '''
+    Salva novos registros no arquivo 'dados_usuario.csv'
+
+    Arguments:
+        nome: uma string
+        ano: um número inteiro
+        sexo: uma string. Valores possíveis: 'M' ou 'F'
+        numero: um número inteiro
+    '''
+
     try:
         with open('dados_usuario.csv', 'r', encoding="utf-8") as f:
             ID = len(f.readlines())-1

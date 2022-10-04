@@ -1,6 +1,15 @@
 import csv
 
 def argOccurrence(arg):
+    '''
+  Verifica o número de registros que contém a substring arg em uma string de alguma de suas informações
+
+  Arguments:
+    arg: uma string
+
+  Returns:
+    Lista com os registros encontrados que possuem a substring
+  '''
     try:
         arquivo = open("dados_usuario.csv")
         linhas = csv.reader(arquivo)
